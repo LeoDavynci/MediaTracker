@@ -40,7 +40,7 @@ class HandGestureController:
         # Swipe detection variables
         self.prev_positions = []
         self.swipe_detection_window = 4
-        self.swipe_threshold = 50
+        self.swipe_threshold = 40
 
     def find_hands(self, img, draw=True):
         img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
